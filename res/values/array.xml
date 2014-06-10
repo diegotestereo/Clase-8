@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="equipos">
+        <item >River</item>
+        <item >Boca</item>
+        <item >Racing</item>
+        <item >Independiente</item>
+        </string-array>
+</resources>

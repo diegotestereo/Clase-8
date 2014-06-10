@@ -1,0 +1,216 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.clase_8.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sexo"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="        "
+                android:textSize="25dp" />
+
+            <RadioGroup
+                android:id="@+id/RdGroup_Sexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/RdBtn_Hombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Hombre" />
+
+                <RadioButton
+                    android:id="@+id/RdBtn_Mujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Estudios"
+                android:textSize="25dp" />
+
+            <RadioGroup
+                android:id="@+id/RdGroup_Estudios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/RdBtn_Primaria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:checked="true"
+                    android:text="Primaria" />
+
+                <RadioButton
+                    android:id="@+id/RdBtn_Secundaria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secundaria" />
+
+                <RadioButton
+                    android:id="@+id/RdBtn_Universidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  
+                    android:text="Universidad" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textview06"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:background="@android:color/holo_red_light"
+                android:text="Gustos"
+                android:textSize="25dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_light"
+                android:columnCount="2" >
+
+                <CheckBox
+                    android:id="@+id/CkBox_Ropa"
+                    android:layout_column="0"
+                    android:layout_gravity="left"
+                    android:layout_row="0"
+                    
+                    android:text="Ropa" />
+
+                <CheckBox
+                    android:id="@+id/CkBox_Perfumes"
+                    android:layout_column="1"
+                    android:layout_gravity="left"
+                    android:layout_row="0"
+                    android:text="Perfumes" />
+
+                <CheckBox
+                    android:id="@+id/CkBox_Futbol"
+                    android:layout_column="0"
+                    android:layout_gravity="left"
+                    android:layout_row="1"
+                    android:text="Futbol" />
+
+                <CheckBox
+                    android:id="@+id/CkBox_Rugby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="left"
+                    android:layout_row="2"
+                    android:text="Rugby" />
+
+                <CheckBox
+                    android:id="@+id/CkBox_Flores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="left"
+                    android:layout_row="2"
+                    android:text="Flores" />
+
+                <CheckBox
+                    android:id="@+id/CkBox_Danza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="left"
+                    android:layout_row="1"
+                    android:text="Danza" />
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/TxtV_Sexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equipos de Futbol"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/Spin_Equipos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado de Animo"
+                android:textSize="25dp" />
+
+            <RatingBar
+                android:id="@+id/RtgBar_Animo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Btn_Guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Guardar Preferencias" />
+
+    </LinearLayout>
+
+</FrameLayout>
